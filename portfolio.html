@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ian Paulo Ocalinas — Resume</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --card:#ffffff;
+      --accent:#000000;
+      --muted:#6b7280;
+      --text:#0f172a;
+      --maxw:900px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:28px auto;padding:20px}
+    .resume{display:grid;grid-template-columns:280px 1fr;gap:24px}
+    .card{background:var(--card);padding:20px;border-radius:8px;border:1px solid #e5e7eb}
+    .profile{display:flex;flex-direction:column;align-items:center;text-align:center}
+    /* Replace placeholder background with your photo URL */
+    .avatar{width:120px;height:120px;border-radius:50%;background:url('Picture.jpg') center/cover no-repeat;margin-bottom:12px}
+    h1{margin:0;font-size:20px}
+    .sub{color:var(--muted);font-size:14px;margin-top:6px}
+    .contact{margin-top:14px;text-align:left;width:100%}
+    .contact p{margin:8px 0;color:var(--muted);font-size:14px}
+    .section-title{font-size:13px;color:var(--text);font-weight:700;margin-bottom:8px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f3f4f6;padding:6px 8px;border-radius:999px;font-size:13px;color:var(--text)}
+    .heading-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .summary{line-height:1.5;color:#111827;font-size:15px}
+    .section{margin-top:18px}
+    .job{margin-bottom:12px}
+    .job h4{margin:0 0 4px 0}
+    .muted{color:var(--muted);font-size:13px}
+    .edu-item{margin-bottom:10px}
+    .btn-row{display:flex;gap:8px;margin-top:14px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    .download{background:#000;color:white}
+    .print{border:1px solid #e6e9ef;color:var(--text);background:white}
+    footer{margin-top:18px;font-size:12px;color:var(--muted);text-align:center}
+    @media (max-width:860px){.resume{grid-template-columns:1fr;}.avatar{width:96px;height:96px}}
+    @media print{body{background:white}.container{box-shadow:none;padding:0}.resume{grid-template-columns:1fr 2fr}.card{box-shadow:none;border-radius:0}.btn-row, footer{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="resume">
+      <aside class="card">
+        <div class="profile">
+          <div class="avatar"></div>
+          <h1>Ian Paulo Ocalinas</h1>
+          <div class="sub">Student — Bachelor of Science in Information Technology</div>
+        </div>
+        <div class="contact">
+          <p><strong>Location:</strong> Bacolod, Visayas 6100, Philippines</p>
+          <p><strong>Phone:</strong> 0994 793 4243</p>
+          <p><strong>Email:</strong> ipc.ocalinas@gmail.com</p>
+          <p><strong>Facebook:</strong> ian.ocalinas08</p>
+        </div>
+        <div class="section" style="margin-top:12px">
+          <div class="section-title">Skills</div>
+          <div class="skill-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">jQuery</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Java</div>
+            <div class="skill">C#</div>
+            <div class="skill">Project Management</div>
+            <div class="skill">Agile</div>
+            <div class="skill">Systems Analysis</div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title">Reference</div>
+          <p style="margin:6px 0 0 0"><strong>Rhyan C. de Loyola</strong></p>
+          <p class="muted" style="margin:4px 0">Faculty, STI West Negros University</p>
+          <p class="muted">grey@gmail.com • 0912 345 6789</p>
+        </div>
+      </aside>
+      <main>
+        <div class="card">
+          <div class="heading-row">
+            <div>
+              <div class="muted">Professional Summary</div>
+              <h2 style="margin:6px 0 8px 0">Motivated Programmer & Systems Analyst</h2>
+            </div>
+            <div style="text-align:right" class="muted">Expected Graduation: 2026</div>
+          </div>
+          <p class="summary">Experienced in planning and executing comprehensive project plans, with strong leadership and organizational skills that guide teams to meet milestones and deliver results. Skilled in systems analysis, data integration, and full-stack development with proven experience in PHP and front-end technologies. Comfortable in deadline-driven environments and experienced with agile methodologies, peer code review, and user acceptance testing.</p>
+          <div class="btn-row">
+            <a class="btn download" href="#" onclick="window.print();return false;">Print / Save PDF</a>
+            <a class="btn print" href="mailto:ipc.ocalinas@gmail.com?subject=Resume%20Inquiry">Contact</a>
+          </div>
+          <div class="section">
+            <div class="section-title">Experience</div>
+            <div class="job">
+              <h4>Programmer</h4>
+              <div class="muted">STI West Negros University | 2023 – Present</div>
+              <ul>
+                <li>Participated in development and maintenance of university systems and projects.</li>
+                <li>Planned, designed, and scheduled phases for projects; monitored performance and implemented improvements.</li>
+                <li>Conducted peer code reviews and supported deployment and testing activities.</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h4>Project Manager (Student / Volunteer)</h4>
+              <div class="muted">STI West Negros University | February – Present</div>
+              <ul>
+                <li>Managed multiple projects by prioritizing tasks according to urgency and resource availability.</li>
+                <li>Identified resource requirements and coordinated team activities to meet objectives.</li>
+                <li>Monitored project performance and adjusted plans as necessary to achieve goals.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-title">Education</div>
+            <div class="edu-item">
+              <strong>Bachelor of Science in Information Technology</strong>
+              <div class="muted">STI West Negros University — Expected 2026</div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-title">Other Strengths</div>
+            <ul>
+              <li>Time management</li>
+              <li>Software development lifecycle</li>
+              <li>Integration planning</li>
+              <li>User acceptance testing</li>
+              <li>Professional networking</li>
+            </ul>
+          </div>
+        </div>
+        <footer>Resume generated from uploaded PDF. Replace the photo URL comment in the .avatar style to show your image.</footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
